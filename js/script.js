@@ -17,6 +17,9 @@ function initializeGame() {
     console.log("randomNumber: " + randomNumber);
     attempts = 0;
 
+    // update attempts left on display
+    document.querySelector("#attemptsLeft").textContent = totalAttempts;
+
     //hiding the Reset button
     document.querySelector("#resetBtn").style.display = "none";
 
